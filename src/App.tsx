@@ -2,7 +2,9 @@ import React from 'react'
 import { Cascader } from 'antd'
 import logo from './logo.svg'
 import './App.css'
-import options from './generateData.json'
+import provinces from './datas/provinces.json'
+import cities from './datas/cities.json'
+import areas from './datas/areas.json'
 
 const App: React.FC = () => {
   return (
@@ -12,7 +14,9 @@ const App: React.FC = () => {
         <p>
           Ant Design 省市区三级联动示例
         </p>
-        <Cascader options={options}/>
+        <Cascader style={{ marginBottom: 16 }} placeholder='省级数据' options={provinces}/>
+        <Cascader style={{ marginBottom: 16 }} placeholder='省市二级联动' options={cities}/>
+        <Cascader style={{ marginBottom: 16 }} placeholder='省市区三级联动' options={areas}/>
       </header>
     </div>
   )
