@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@example
+        uses: actions/checkout@v2
+        with:
+          ref: example
       - name: build and deploy
         uses: JamesIves/github-pages-deploy-action@master
         env:
