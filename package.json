@@ -1,0 +1,21 @@
+{
+  "name": "antd-china-area-data",
+  "version": "1.0.0",
+  "description": " Ant Design Cascader级联选择 中国省市区三级数据",
+  "scripts": {
+    "fetch": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wkl007/antd-china-area-data.git"
+  },
+  "author": "wkl007",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wkl007/antd-china-area-data/issues"
+  },
+  "homepage": "https://github.com/wkl007/antd-china-area-data#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
