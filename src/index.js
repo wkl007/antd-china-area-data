@@ -18,7 +18,21 @@ const processHtml = html => {
   return result
 }
 
-const processRowData = rowData => {
+// 获取省级（省份、直辖市、自治区）数据
+const getProvincesData = rowData => {
+  let result = []
+
+  rowData.forEach((item) => {
+    if (item.value.substring(2, 6) === '0000') {
+      result.push(item)
+    }
+  })
+
+  return result
+}
+
+// 获取地级（城市）数据
+const getCitiesData = rowData => {
   let provinceIndex = []
   let twoArrayIndex = []
   let twoArray = []
@@ -58,7 +72,79 @@ const processRowData = rowData => {
       data = {
         value: item[0].value,
         label: item[0].label,
+      }
+    } else {
+      data = {
+        value: item[0].value,
+        label: item[0].label,
         children: [],
+      }
+
+      // 特殊情况直辖市
+      if (item[1].value.substring(5, 6) !== '0') {
+        data.children.push({
+          // value: item[0].value,
+          value: `${item[0].value.substring(0, 3)}100`,
+          label: item[0].label,
+        })
+      } else {
+        item.forEach((subItem, index) => {
+          if (index !== 0 && subItem.value.substring(4, 6) === '00') {
+            data.children.push({
+              value: subItem.value,
+              label: subItem.label,
+            })
+          }
+        })
+      }
+    }
+
+    result.push(data)
+  })
+  return result
+}
+
+// 获取县级（区县）数据
+const getAreasData = rowData => {
+  let provinceIndex = []
+  let twoArrayIndex = []
+  let twoArray = []
+  let result = []
+
+  rowData.forEach((item, index) => {
+    if (item.value.substring(2, 6) === '0000') {
+      provinceIndex.push(index)
+    }
+  })
+
+  provinceIndex.forEach((item, index) => {
+    let arr = []
+    if (index !== provinceIndex.length - 1) {
+      arr.push(item, provinceIndex[index + 1])
+    } else {
+      arr.push(item, rowData.length - 1)
+    }
+    twoArrayIndex.push(arr)
+  })
+
+  twoArrayIndex.forEach(item => {
+    let provinceData = []
+    if (item[0] === item[1]) {
+      provinceData.push(rowData[item[0]])
+    } else {
+      provinceData = rowData.slice(item[0], item[1])
+    }
+    twoArray.push(provinceData)
+  })
+
+  twoArray.forEach(item => {
+    let data = {}
+
+    // 特殊情况 香港 澳门 台湾 三级目录一样
+    if (item.length === 1) {
+      data = {
+        value: item[0].value,
+        label: item[0].label,
       }
     } else {
       data = {
@@ -135,15 +221,28 @@ http.get(url, res => {
     // 生成原始数据
     const outputRawDataPath = './dist/data.json'
     fs.writeFile(outputRawDataPath, JSON.stringify(rowData), err => {
-      console.log(err || `原始数据保存成功到data.json文件中${outputRawDataPath}`)
+      console.log(err || `原始数据保存至data.json文件中${outputRawDataPath}`)
     })
 
-    // 生成最终数据
-    const resultData = processRowData(rowData)
+    // 生成省级数据
+    const provincesData = getProvincesData(rowData)
+    const outputProvincesDataPath = './dist/provinces.json'
+    fs.writeFile(outputProvincesDataPath, JSON.stringify(provincesData), err => {
+      console.log(err || `省级数据保存至provinces.json文件中${outputProvincesDataPath}`)
+    })
 
-    const outputResultDataPath = './dist/generateData.json'
-    fs.writeFile(outputResultDataPath, JSON.stringify(resultData), err => {
-      console.log(err || `最终数据保存成功到generateData.json文件中${outputResultDataPath}`)
+    // 生成地级数据
+    const citiesData = getCitiesData(rowData)
+    const outputCitiesDataPath = './dist/cities.json'
+    fs.writeFile(outputCitiesDataPath, JSON.stringify(citiesData), err => {
+      console.log(err || `地级数据保存至cities.json文件中${outputCitiesDataPath}`)
+    })
+
+    // 生成县级数据
+    const areasData = getAreasData(rowData)
+    const outputAreasDataPath = './dist/areas.json'
+    fs.writeFile(outputAreasDataPath, JSON.stringify(areasData), err => {
+      console.log(err || `县级保存成功到areas.json文件中${outputAreasDataPath}`)
     })
 
   })
