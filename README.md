@@ -9,6 +9,14 @@
 - 本项目已更新至：
   - [2019年11月中华人民共和国县以上行政区划代码（截止时间：2019-12-24，发布时间：2020-01-15）](http://www.mca.gov.cn/article/sj/xzqh/2019/2019/201912251506.html)
 
+## 数据下载
+
+| 文件列表                     | JSON                                                         |
+| ---------------------------- | ------------------------------------------------------------ |
+| 省级（省份、直辖市、自治区） | [provinces.json](https://github.com/wkl007/antd-china-area-data/blob/master/dist/provinces.json) |
+| 地级（城市）                 | [cities.json](https://github.com/wkl007/antd-china-area-data/blob/master/dist/cities.json) |
+| 县级（区县）                 | [areas.json](https://github.com/wkl007/antd-china-area-data/blob/master/dist/areas.json) |
+
 ## 数据更新
 
 ```
