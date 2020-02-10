@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "25a5c1455b28fbd52bb6ec548bb4422f",
+    "revision": "2c6e0914f4adbd41766e6ed90fd3784b",
     "url": "/antd-china-area-data/index.html"
   },
   {
-    "revision": "c462dbff1b190bf68567",
-    "url": "/antd-china-area-data/static/css/2.3e9ce9d5.chunk.css"
+    "revision": "f176ce2fbfe8bb4d55d4",
+    "url": "/antd-china-area-data/static/css/2.f28b2f66.chunk.css"
   },
   {
     "revision": "f25de3fff62e9a7ba6b8",
     "url": "/antd-china-area-data/static/css/main.c1bb0f10.chunk.css"
   },
   {
-    "revision": "c462dbff1b190bf68567",
-    "url": "/antd-china-area-data/static/js/2.0e10fac3.chunk.js"
+    "revision": "f176ce2fbfe8bb4d55d4",
+    "url": "/antd-china-area-data/static/js/2.68c7e088.chunk.js"
   },
   {
     "revision": "f032203ca460334c00de541c30a6078a",
-    "url": "/antd-china-area-data/static/js/2.0e10fac3.chunk.js.LICENSE"
+    "url": "/antd-china-area-data/static/js/2.68c7e088.chunk.js.LICENSE"
   },
   {
     "revision": "f25de3fff62e9a7ba6b8",
