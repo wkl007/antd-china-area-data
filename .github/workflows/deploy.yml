@@ -5,14 +5,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.0.0
         with:
           ref: example
+      - name: install
+        run: |
+          npm install
+          npm run-script build
       - name: build and deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v2
-        env:
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BASE_BRANCH: example
           BRANCH: gh-pages
           FOLDER: build
-          BUILD_SCRIPT: npm install && npm run build
+          CLEAN: true
