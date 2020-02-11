@@ -4,15 +4,15 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v2.0.0
         with:
           ref: example
-      - name: install
+      - name: Install
         run: |
           npm install
           npm run-script build
-      - name: build and deploy
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
