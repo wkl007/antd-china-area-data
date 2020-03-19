@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/antd-china-area-data/static/css/main.94c80cbd.chunk.css",
-    "main.js": "/antd-china-area-data/static/js/main.29f3d0e4.chunk.js",
-    "main.js.map": "/antd-china-area-data/static/js/main.29f3d0e4.chunk.js.map",
+    "main.js": "/antd-china-area-data/static/js/main.cd4299a4.chunk.js",
+    "main.js.map": "/antd-china-area-data/static/js/main.cd4299a4.chunk.js.map",
     "runtime-main.js": "/antd-china-area-data/static/js/runtime-main.4d2ca07f.js",
     "runtime-main.js.map": "/antd-china-area-data/static/js/runtime-main.4d2ca07f.js.map",
     "static/css/2.1bcc8c8f.chunk.css": "/antd-china-area-data/static/css/2.1bcc8c8f.chunk.css",
     "static/js/2.24c27353.chunk.js": "/antd-china-area-data/static/js/2.24c27353.chunk.js",
     "static/js/2.24c27353.chunk.js.map": "/antd-china-area-data/static/js/2.24c27353.chunk.js.map",
     "index.html": "/antd-china-area-data/index.html",
-    "precache-manifest.4b080319add20d114e1519e22817e80c.js": "/antd-china-area-data/precache-manifest.4b080319add20d114e1519e22817e80c.js",
+    "precache-manifest.cc920cc5c048a22438042984f56775b1.js": "/antd-china-area-data/precache-manifest.cc920cc5c048a22438042984f56775b1.js",
     "service-worker.js": "/antd-china-area-data/service-worker.js",
     "static/css/2.1bcc8c8f.chunk.css.map": "/antd-china-area-data/static/css/2.1bcc8c8f.chunk.css.map",
     "static/css/main.94c80cbd.chunk.css.map": "/antd-china-area-data/static/css/main.94c80cbd.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.1bcc8c8f.chunk.css",
     "static/js/2.24c27353.chunk.js",
     "static/css/main.94c80cbd.chunk.css",
-    "static/js/main.29f3d0e4.chunk.js"
+    "static/js/main.cd4299a4.chunk.js"
   ]
 }

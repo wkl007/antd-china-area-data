@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/antd-china-area-data/precache-manifest.4b080319add20d114e1519e22817e80c.js"
+  "/antd-china-area-data/precache-manifest.cc920cc5c048a22438042984f56775b1.js"
 );
 
 self.addEventListener('message', (event) => {

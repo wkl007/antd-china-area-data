@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0cf0046d2e1ed75125ccda75e9c7d28e",
+    "revision": "c05ee5b9b1bd8c6fb9fbc284cd88c052",
     "url": "/antd-china-area-data/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/antd-china-area-data/static/css/2.1bcc8c8f.chunk.css"
   },
   {
-    "revision": "9ccb4f20e078cdab3b59",
+    "revision": "ce834754898ee6136375",
     "url": "/antd-china-area-data/static/css/main.94c80cbd.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/antd-china-area-data/static/js/2.24c27353.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9ccb4f20e078cdab3b59",
-    "url": "/antd-china-area-data/static/js/main.29f3d0e4.chunk.js"
+    "revision": "ce834754898ee6136375",
+    "url": "/antd-china-area-data/static/js/main.cd4299a4.chunk.js"
   },
   {
     "revision": "7467064687b76f995534",
