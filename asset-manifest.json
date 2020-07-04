@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/antd-china-area-data/static/css/main.94c80cbd.chunk.css",
-    "main.js": "/antd-china-area-data/static/js/main.cd4299a4.chunk.js",
-    "main.js.map": "/antd-china-area-data/static/js/main.cd4299a4.chunk.js.map",
-    "runtime-main.js": "/antd-china-area-data/static/js/runtime-main.4d2ca07f.js",
-    "runtime-main.js.map": "/antd-china-area-data/static/js/runtime-main.4d2ca07f.js.map",
-    "static/css/2.1bcc8c8f.chunk.css": "/antd-china-area-data/static/css/2.1bcc8c8f.chunk.css",
-    "static/js/2.24c27353.chunk.js": "/antd-china-area-data/static/js/2.24c27353.chunk.js",
-    "static/js/2.24c27353.chunk.js.map": "/antd-china-area-data/static/js/2.24c27353.chunk.js.map",
+    "main.js": "/antd-china-area-data/static/js/main.a576d61f.chunk.js",
+    "main.js.map": "/antd-china-area-data/static/js/main.a576d61f.chunk.js.map",
+    "runtime-main.js": "/antd-china-area-data/static/js/runtime-main.ecdfd5ec.js",
+    "runtime-main.js.map": "/antd-china-area-data/static/js/runtime-main.ecdfd5ec.js.map",
+    "static/css/2.b75f4041.chunk.css": "/antd-china-area-data/static/css/2.b75f4041.chunk.css",
+    "static/js/2.e223c8ce.chunk.js": "/antd-china-area-data/static/js/2.e223c8ce.chunk.js",
+    "static/js/2.e223c8ce.chunk.js.map": "/antd-china-area-data/static/js/2.e223c8ce.chunk.js.map",
     "index.html": "/antd-china-area-data/index.html",
-    "precache-manifest.cc920cc5c048a22438042984f56775b1.js": "/antd-china-area-data/precache-manifest.cc920cc5c048a22438042984f56775b1.js",
+    "precache-manifest.dec5a56527d4c6f6a1af0542923e14b7.js": "/antd-china-area-data/precache-manifest.dec5a56527d4c6f6a1af0542923e14b7.js",
     "service-worker.js": "/antd-china-area-data/service-worker.js",
-    "static/css/2.1bcc8c8f.chunk.css.map": "/antd-china-area-data/static/css/2.1bcc8c8f.chunk.css.map",
+    "static/css/2.b75f4041.chunk.css.map": "/antd-china-area-data/static/css/2.b75f4041.chunk.css.map",
     "static/css/main.94c80cbd.chunk.css.map": "/antd-china-area-data/static/css/main.94c80cbd.chunk.css.map",
-    "static/js/2.24c27353.chunk.js.LICENSE.txt": "/antd-china-area-data/static/js/2.24c27353.chunk.js.LICENSE.txt",
+    "static/js/2.e223c8ce.chunk.js.LICENSE.txt": "/antd-china-area-data/static/js/2.e223c8ce.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/antd-china-area-data/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d2ca07f.js",
-    "static/css/2.1bcc8c8f.chunk.css",
-    "static/js/2.24c27353.chunk.js",
+    "static/js/runtime-main.ecdfd5ec.js",
+    "static/css/2.b75f4041.chunk.css",
+    "static/js/2.e223c8ce.chunk.js",
     "static/css/main.94c80cbd.chunk.css",
-    "static/js/main.cd4299a4.chunk.js"
+    "static/js/main.a576d61f.chunk.js"
   ]
 }
