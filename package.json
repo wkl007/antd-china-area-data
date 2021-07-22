@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/wkl007/antd-china-area-data#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.5"
+    "cheerio": "^1.0.0-rc.10"
   }
 }

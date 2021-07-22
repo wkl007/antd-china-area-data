@@ -2,7 +2,7 @@ const cheerio = require('cheerio')
 const fs = require('fs')
 const http = require('http')
 
-const url = 'http://preview.www.mca.gov.cn/article/sj/xzqh/2020/2020/202101041104.html'
+const url = 'http://www.mca.gov.cn/article/sj/xzqh/2020/20201201.html'
 
 const processHtml = html => {
   const $ = cheerio.load(html)
