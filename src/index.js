@@ -1,8 +1,8 @@
 const cheerio = require('cheerio')
 const fs = require('fs')
-const http = require('http')
+const https = require('https')
 
-const url = 'http://www.mca.gov.cn/article/sj/xzqh/2020/20201201.html'
+const url = 'https://www.mca.gov.cn/mzsj/xzqh/2022/202201xzqh.html'
 
 const processHtml = html => {
   const $ = cheerio.load(html)
@@ -201,7 +201,7 @@ const getAreasData = rowData => {
   return result
 }
 
-http.get(url, res => {
+https.get(url, res => {
   res.setEncoding('utf-8')
 
   let html = ''
